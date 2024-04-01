@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retangulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><h1>CANVAS RETANGULO : </h1></p>
+    <canvas width="400" height="200" id="myCanvas" style="border: 1px solid rebeccapurple"></canvas>
+    <script type="text/javascript"> 
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d"); //ctx é usada para criar o circulo
+    ctx.fillStyle="#d8db1a"; //cor do circulo
+    ctx.beginPath(); //inicia o caminho
+    ctx.fillRect(50, 50, 150, 100);
+    ctx.closePath();
+    ctx.fill();
+    </script>
+</body>
+</html>

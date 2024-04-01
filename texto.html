@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <p><h1>CANVAS texto : </h1></p>
+    <canvas width="600" height="400" id="myCanvas" style="border: 1px solid rebeccapurple"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.color = ("black");
+        ctx.fillText("TEC", 50, 100);
+        ctx.strokeText("INFORMATICA",50,150);
+    </script>    
+</body>
+</html>
